@@ -1,0 +1,15 @@
+{% load static %}
+
+<html>
+    <form id="upload_file" method="Post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.file}}
+        {% if form.file.errors %}
+            <div class="form-control-feedback">{{ form.file.errors }}</div>
+        {% endif %}
+        <button type="submit">upload</button>
+        {% if generate_excel_status %}
+            <a href="{% url 'donwnload_file' file_name %}" taget="_blank">Download</a>
+        {% endif %}
+    </form>
+</html>
