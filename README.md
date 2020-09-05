@@ -11,7 +11,7 @@ steps to follow
 
 4) Go to 127.0.0.1:8000/geoadd
 
-5) Upload your xlsx file make sure in that xlsx file address column shoukd be there.
+5) Upload your xlsx file make sure in that xlsx file address column should be there.
 
 6) Then click on the upload button 
 
